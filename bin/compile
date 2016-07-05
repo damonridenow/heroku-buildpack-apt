@@ -71,6 +71,11 @@ for PACKAGE in $(cat $BUILD_DIR/Aptfile); do
   fi
 done
 
+cp oracle-instantclient11* $APT_CACHE_DIR/archives/
+
+echo "[DEBUG] build dir"
+ls $APT_CACHE_DIR/archives/
+
 mkdir -p $BUILD_DIR/.apt
 
 for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
