@@ -85,7 +85,7 @@ done
 
 echo "[DEBUG] find node"
 find . | grep node
-fond . | grep npm
+find . | grep npm
 
 topic "Writing profile script"
 mkdir -p $BUILD_DIR/.profile.d
